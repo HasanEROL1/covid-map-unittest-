@@ -2,7 +2,11 @@ import { createSlice } from "@reduxjs/toolkit"
 import { getDetails } from "./actions"
 
 
-const initialState = {}
+const initialState = {
+  isLoading: true,
+  error: null,
+  data: null,
+}
 
 const covidSlice = createSlice({
   name: "covid",
@@ -11,12 +15,13 @@ const covidSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(getDetails.pending, (state) => {
       state.isLoading = true
+      state.error = null
     })
-    builder.addCase(getDetails.rejected, (state, {error}) => {
+    builder.addCase(getDetails.rejected, (state, { error }) => {
       state.isLoading = false
       state.error = error.message
     })
-    builder.addCase(getDetails.fulfilled, (state, {payload}) => {
+    builder.addCase(getDetails.fulfilled, (state, { payload }) => {
       state.isLoading = false
       state.error = null
       state.data = payload

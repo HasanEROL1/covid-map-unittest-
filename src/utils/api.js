@@ -1,21 +1,22 @@
 import axios from 'axios';
 
+// api.js dosyasında console.log ekleyerek kontrol et
+const apiKey = import.meta.env.VITE_RAPIDAPI_KEY;
 
-export const totalApi = axios.create ({
-  
-   baseURL : 'https://covid-19-statistics.p.rapidapi.com/reports',
+if (!apiKey) {
+    console.error("HATA: API Key bulunamadı! .env dosyasını kontrol et.");
+}
+
+export const totalApi = axios.create({
+
+    baseURL: 'https://covid-19-statistics.p.rapidapi.com',
     headers: {
-        'x-rapidapi-key': '6168180c32msh468da6d8165170fp11f587jsnfbc687b6b116',
-        'x-rapidapi-host': 'covid-19-statistics.p.rapidapi.com'
+        'x-rapidapi-key': apiKey,
+        'x-rapidapi-host': 'covid-19-statistics.p.rapidapi.com',
+        'Content-Type': 'application/json',
     }
 })
 
 
-export const detailApi = axios.create({
 
- baseURL: "https://covid-193.p.rapidapi.com",
-headers: {
-        'x-rapidapi-key': '6168180c32msh468da6d8165170fp11f587jsnfbc687b6b116',
-        'x-rapidapi-host': 'covid-193.p.rapidapi.com'
-    }
-})
+
