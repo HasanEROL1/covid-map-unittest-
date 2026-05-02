@@ -5,7 +5,7 @@
 Bu proje, **Vite** altyapısı üzerinde geliştirilmiş, **React Redux** ve **React Simple Maps** kütüphanelerini kullanarak ülkelerin temel verilerini listelemeyi ve coğrafi görselleştirmeyi amaçlayan bir web uygulamasıdır. Uygulama, performans ve test süreçlerine önem verilerek tasarlanmıştır.
 
 ---
-
+![demo](covid-test.gif)
 ## 🚀 Başlarken
 
 Bu projeyi yerel ortamınızda ayağa kaldırmak ve çalıştırmak için aşağıdaki adımları takip edin.
@@ -159,7 +159,7 @@ Uygulama, temel olarak ana sayfa (`Home`) ve detay sayfası (`Detail`) olmak üz
 ### Uygulamanın Çalışma Anı (GIF)
 
 **Veri Yükleme ve Detay Görünümü:**
-![demo](covid-test.gif)
+
 
 **Geri Navigasyon ve Harita Etkileşimi:**
 ![Geri butonuna tıklanarak önceki sayfaya başarılı geçişin gösterildiği ve harita ile etkileşimin olduğu GIF] (GIF_URL_GERI_NAVIGASYON_VE_HARITA)
