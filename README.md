@@ -54,8 +54,8 @@ Uygulama, temel olarak ana sayfa (`Home`) ve detay sayfası (`Detail`) olmak üz
 
 ### Uygulamanın Çalışma Anı (GIF)
 
-**Veri Yükleme ve Detay Görünümü:**
-![Uygulamanın yüklenme durumundan veri gösterimine geçtiği GIF] (GIF_URL_YÜKLEME_VE_VERI)
+## Demo
+![demo](.
 
 **Geri Navigasyon ve Harita Etkileşimi:**
 ![Geri butonuna tıklanarak önceki sayfaya başarılı geçişin gösterildiği ve harita ile etkileşimin olduğu GIF] (GIF_URL_GERI_NAVIGASYON_VE_HARITA)
